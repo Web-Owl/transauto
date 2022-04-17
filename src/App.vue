@@ -3,5 +3,9 @@
 </script>
 
 <template>
-  <Header/>
+  <div class="wrapper">
+    <Header/>
+    <router-view></router-view>
+  </div>
 </template>
+

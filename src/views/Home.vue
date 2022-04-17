@@ -1,3 +1,7 @@
+<script setup>
+  import Request from '../components/Request.vue'
+</script>
+
 <template>
-  <h1 class=" text-red-500 ">Home Page</h1>
+  <Request title="ЗАЯВКА НА АРЕНДУ СПЕЦТЕХНИКИ"/>
 </template>
