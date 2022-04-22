@@ -667,12 +667,12 @@ header .callback {
 	text-decoration: underline;
 }
 .rentCatalog__item:hover .rentCatalog__link {
-	background: #FFBB00 url(/images/rentCatalog__link2.svg) no-repeat scroll 50% 50%;
+	background: #FFBB00 url(/src/assets/img/rentCatalog__link2.svg) no-repeat scroll 50% 50%;
 }
 .rentCatalog__link {
 	width: 91px;
 	height: 113px;
-	background: #FAFAFA url(/images/rentCatalog__link.svg) no-repeat scroll 50% 50%;
+	background: #FAFAFA url(/src/assets/img/rentCatalog__link.svg) no-repeat scroll 50% 50%;
 	transition-duration: 0.5s;
 }
 .rentCatalog__img {
