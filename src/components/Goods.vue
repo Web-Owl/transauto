@@ -21,7 +21,10 @@
                 onSwiper,
                 onSlideChange,
                 modules: [Navigation],
-                
+                navigation :{
+                   nextEl: "#swiper-forward",
+                   prevEl: ".goods__sl" 
+                }
             };
         },
         data() {
@@ -36,14 +39,17 @@
     <div class="goods__head df fww aic">
       <div class="sectionTitle">популярная спецтехника</div>
       <div class="goods__sl"></div>
-      <div class="goods__sr"></div>
+      <div class="goods__sr" id="swiper-forward"></div>
     </div>
 
     <swiper
-        navigation
         @swiper="onSwiper"
         @slideChange="onSlideChange"
-        :navigation="true"
+        :loop = "true"
+        :navigation="{
+          nextEl: '.goods__sr',
+          prevEl: '.goods__sl'
+        }"
         :breakpoints="{
             '640': {
                 slidesPerView: 1,
@@ -51,11 +57,11 @@
             },
             '768': {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 20,
             },
             '1024': {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 20,
             },
         }"
         class="goods__slider">
@@ -77,23 +83,18 @@
             />
           </div>
         </a>
-        <div class="goods__chars">
+        <div class="goods__chars" v-if="item.characteristics">
           <span>Характеристики</span>
-          <div class="goods__char">
-            <img src="/images/act_ch1.svg" alt="" />
-            Эксплуатационная масса, кг <span></span>
-            <b>32700</b>
-          </div>
-          <div class="goods__char">
-            <img src="/images/act_ch2.svg" alt="" />
-            Объем ковша, м3 <span></span>
-            <b>1.6</b>
+          <div class="goods__char" v-for="item in item.characteristics">
+            <img :src="item.img_src" alt="" />
+            {{item.name}} <span></span>
+            <b>{{item.value}}</b>
           </div>
         </div>
         <div class="goods__po df fww aic">
           <div class="goods__price">
             <b>{{item.price_per_hour}}₽/Ч</b>
-            {{item.price_total}}₽/смена
+            {{item.price_total}} ₽/смена
           </div>
           <div
             class="yBtn goods__order showPdOrder"

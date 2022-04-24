@@ -685,7 +685,7 @@ header .callback {
 .mSpec {
 	margin-bottom: 145px;
 }
-.mSpec .slick-track {
+.mSpec .swiper-wrapper {
 	display: flex;
 	align-items: center;
 }
@@ -928,8 +928,8 @@ header .callback {
 	padding-right: 35px;
 	padding-bottom: 45px;
 	padding-top: 20px;
-	margin-right: 15px;
-	margin-left: 15px;
+	/* margin-right: 15px;
+	margin-left: 15px; */
 	margin-bottom: 30px;
 	height: auto;
 	transition-duration: 0.5s;
