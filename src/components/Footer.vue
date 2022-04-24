@@ -1,7 +1,7 @@
 <template>
 <footer class="footer">
 	<div class="contentData">
-		<a href="/" class="logo"><img src="/images/logo.svg" alt=""></a>
+		<a href="/" class="logo"><img src="../assets/img/logo.svg" alt=""></a>
 		<div class="footer__data df fww">
 			<div class="footer__dataItem">
 				<a href="/arenda/">Аренда спецтехники</a>

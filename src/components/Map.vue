@@ -22,7 +22,7 @@
 				<div class="map__actions">
 					<div class="yBtn connect24_7 showCallBack">связаться с нами 24/7</div>
 					<div class="map__actionsSoc">
-						<a href="https://wa.me/+79175170350" target="_blank" rel="nofollow"><img src="/images/whatsapp.svg" alt=""></a><a href="tg://resolve?domain=OOOTransavto" target="_blank" rel="nofollow"><img src="/images/telegram.svg" alt=""></a>					</div>
+						<a href="https://wa.me/+79175170350" target="_blank" rel="nofollow"><img src="../assets/img/whatsapp.svg" alt=""></a><a href="tg://resolve?domain=OOOTransavto" target="_blank" rel="nofollow"><img src="../assets/img/telegram.svg" alt=""></a>					</div>
 				</div>
 			</div>
 		</div>
