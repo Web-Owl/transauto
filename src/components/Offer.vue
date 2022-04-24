@@ -1,10 +1,21 @@
+<script>
+export default {
+  props: {
+      title: String,
+      text: String,
+	  phone: String
+  }
+}
+</script>
 <template>
 <div class="formOrder formOrder--bg1">
 	<div class="formOrder__inner">
 		<div class="formOrder__title">
-			хотите узнать условия<br> аренды спецтехники?
+			{{title}}
 		</div>
-		<div class="formOrder__text">Оставьте заявку или звоните нам <a href="tel:79175170350">+7 (917) 517-03-50</a></div>
+		<div class="formOrder__text"><p v-html="text"></p> 
+		<slot></slot>
+		</div>
 		<form action="javascript:void(null)" id="MyFRM_ARENDA">
 			<input type="text" placeholder="Ваше Имя" name="NAME" id="NAME_ARENDA">
 			<input type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" id="PHONE_ARENDA">

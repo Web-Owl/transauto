@@ -13,7 +13,7 @@
   <Catalog /> 
   <div class="sectionTitle sectionTitle--mb110 tac">марки спецтехники</div>
   <Brands />
-  <Offer />
+  <Offer title="ХОТИТЕ УЗНАТЬ УСЛОВИЯ АРЕНДЫ СПЕЦТЕХНИКИ?" text="Оставьте заявку или звоните нам <a href='tel:+79175170350'>+7 (917) 517-03-50</a>" />
   <div class="sectionTitle tac">наши преимущества</div>
   <Benefits />
   <Goods/>
