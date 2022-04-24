@@ -2,9 +2,7 @@
     import services from '../assets/js/Services.js';
     export default {
         data() {
-            return {
-                services: services
-            }
+            return {services: services}
         }
     }
 </script>
@@ -17,7 +15,8 @@
                     <div class="services__name">
                         <a>{{item.name}}</a>
                     </div>
-                    <div class="services__price">от {{item.price}}</div>
+                    <div class="services__price">от
+                        {{item.price}}</div>
                     <div class="services__link">
                         <a>подробнее</a>
                     </div>

@@ -2,7 +2,8 @@
 export const rentCatalog__items = [
     {
         name: 'Самосвал',
-        img_src: '../src/assets/img/iblock/a87/d31u8cy79jjpb0j8gw7zaz7arodg1pt7.png'
+        img_src: '../src/assets/img/iblock/a87/d31u8cy79jjpb0j8gw7zaz7arodg1pt7.png',
+        category: 'сам'
     },
     {
         name: 'Экскаваторы погрузчики',

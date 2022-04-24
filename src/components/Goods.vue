@@ -1,6 +1,6 @@
 <script>
     import goods from '../assets/js/Goods.js';
-      import { Swiper, SwiperSlide } from 'swiper/vue';
+    import { Swiper, SwiperSlide } from 'swiper/vue';
     import SwiperCore, {Pagination, Navigation } from "swiper";
     import 'swiper/css';
     import 'swiper/css/navigation';

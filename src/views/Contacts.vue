@@ -1,3 +1,6 @@
+<script setup>
+  import Contacts from '../components/Contacts.vue'
+</script>
 <template>
-  <h1>Contacts</h1>
+  <Contacts />
 </template>

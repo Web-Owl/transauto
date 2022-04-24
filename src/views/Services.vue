@@ -1,14 +1,78 @@
 <script setup>
-  import Request from '../components/Request.vue'
-  import Services from '../components/Services.vue'
-  import Description from '../components/Description.vue'
-  import Offer from '../components/Offer.vue'
+    import Request from '../components/Request.vue'
+    import Services from '../components/Services.vue'
+    import Description from '../components/Description.vue'
+    import Offer from '../components/Offer.vue'
 </script>
-
 <template>
-  <Request title="ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ"/>
-  <div class="sectionTitle tac">наши услуги</div>
-  <Services />
-  <Description />
-  <Offer title="ГОТОВЫ К СОТРУДНИЧЕСТВУ?" text="Оставьте заявку, мы свяжемся с вами в ближайшее время и ответим на <span>любые ваши вопросы</span>"/>
+    <Request title="ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ"/>
+    <div class="sectionTitle tac">наши услуги</div>
+    <Services/>
+    <Description>
+        <img src="../assets/img/about.jpg" alt="" class="text__imgR">
+        <h1 class="pageTitle">
+            <p align="center">
+                Услуги спецтехники с экипажем в Москве и Московской области
+            </p>
+        </h1>
+        <p></p>
+        <p>
+            Компания «ТРАНСАВТО» предоставляет услуги спецтехники с экипажем в Москве и области, выполняя работы в сферах грузоперевозок, жилищного и промышленного строительства. Доставляет щебень и другие виды
+            <a href="/services/dostavka-peska-i-shchebnya-nerudnykh-materialov/">
+                <u>нерудных материалов</u>
+            </a>
+            для
+            <a href="/services/blagoustroystvo-territorii/">благоустройства территорий</a>
+            и
+            <a href="/services/dorozhnoe-stroitelstvo-i-remont-dorog/">
+                <u>ремонта дорог</u>
+            </a>. Вывозит
+            <a href="/services/vyvoz-grunta/">
+                <u>грунт</u>
+            </a>,
+            <a href="/services/vyvoz-storoitelnogo-musora/">
+                <u>строительный мусор</u>
+            </a>
+            и
+            <a href="/services/vyvoz-snega/">
+                <u>снег</u>
+            </a>
+            в разных объёмах.
+        </p>
+        <h2>
+            Большой парк техники
+        </h2>
+        <p>
+            Все работы проводятся опытными специалистами с помощью техники на колёсном или гусеничном ходу, которая оснащается разными видами навесного оборудования.
+        </p>
+        <p>
+            Парк состоит из большого количества
+            <u>
+                <a href="/arenda/samosvaly/">самосвалов</a>
+            </u>,
+            <a href="/arenda/ekskavatory-pogruzchiki/">
+                <u>экскаваторов</u>
+            </a>,<u>&nbsp;</u>
+            <a href="/arenda/avtokrany/">
+                <u>автокранов</u>
+            </a>,
+            <a href="/arenda/traktory/">
+                <u>тракторов</u>
+            </a>&nbsp;и других машин.
+        </p>
+        <h3>
+            Своевременное ТО
+        </h3>
+        <p>
+            Компания
+            <u>
+                <a href="/about/">«ТРАНСАВТО»</a>
+            </u>
+            предоставляет услуги спецтехники в Москве многим крупным строительным организациям и промышленным предприятиям. Имеет большой опыт во всех областях эксплуатации колёсных и гусеничных машин. Следит за техническим состоянием основных узлов и механизмов, что гарантирует их высокую работоспособность.
+        </p>
+        <p>
+            Закажите услуги техники в компании «ТРАНСАВТО», оставив заявку на сайте, позвонив по телефону или написав в мессенджере.
+        </p>
+    </Description>
+    <Offer title="ГОТОВЫ К СОТРУДНИЧЕСТВУ?" text="Оставьте заявку, мы свяжемся с вами в ближайшее время и ответим на <span>любые ваши вопросы</span>"/>
 </template>
