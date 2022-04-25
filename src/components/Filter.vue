@@ -1,33 +1,25 @@
 <script>
     import rentCatalog__items from '../assets/js/Catalog.js';
-    import goods from '../assets/js/Goods.js';
     import Catalog from './Catalog.vue';
+    import vSelect from 'vue-select'
+    import 'vue-select/dist/vue-select.css';
     export default {
         components: {
-            Catalog
+            Catalog,
+            vSelect
         },
-        methods: {
-            sortByCategories(category) {
-                this.sortedCatalogs = [];
-                let vm = this;
-                this.rentCatalog__items.map(function (item) {
-                    if (item.category === category.name) {
-                        vm.sortedCatalogs.push(item);
-                    }
-                })
+        computed: {
+            sortedList() {
+            console.log(this.selected)
+                return this.selected
             }
         },
         data() {
             return {
                 rentCatalog__items: rentCatalog__items,
-                categories: [
-                    {
-                        name:'Вид спецтехники', value: 'All',
-                        name:'Самосвалы', value: 'сам'
-                    }
-                ],
-                selected: 'Вид спецтехники',
-                sortedCatalogs: []
+                selected: {
+                    name:'Вид спецтехники'
+                }
             }
         }
     }
@@ -38,13 +30,30 @@
             <div class="rentFilter__label">выберите спецтехнику:</div>
             <a  class="rentFilter__link showInd">Не нашли нужную спецтехнику?</a>
             <div class="rentFilter__selects df fww">
-                <select name="FilterCategory" class="FilterCategory"  @select="sortByCategories">
-                    <option>{{selected}}</option>
-                    <option v-for="item in rentCatalog__items">{{item.name}}</option>
-                </select>
+            <v-select v-model="selected" :value="selected" label="name" :options="rentCatalog__items" class="FilterCategory" ></v-select>
+                <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-if="selected.name != 'Вид спецтехники'">
+                    <div class="rentCatalog__item">
+                        <div class="rentCatalog__img" >
+                                <img :src="sortedList.img_src" alt="">
+                        </div>
+                        <div class="rentCatalog__name">
+                            {{sortedList.name}}
+                        </div>
+                        <div class="rentCatalog__link" ></div>
+                    </div>                       
+                </div>
+                <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-else>
+                    <div class="rentCatalog__item" v-for="item in rentCatalog__items">
+                        <div class="rentCatalog__img" >
+                                <img :src="item.img_src" alt="">
+                        </div>
+                        <div class="rentCatalog__name">
+                            {{item.name}}
+                        </div>
+                        <div class="rentCatalog__link" ></div>
+                    </div>                       
+                </div>
             </div>
         </div>
     </div>
-    <div class="sectionTitle sectionTitle--mb40 contentData ">Выберите спецтехнику:</div>
-    <Catalog />
 </template>
