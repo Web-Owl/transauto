@@ -1717,7 +1717,9 @@ label:hover .product__dopImg img {
 	font-weight: 900;
 	color: #202020;
 }
-.rentFilter__selects .new-select.on ,
+.rentFilter__selects .vs--open ,
+.rentFilter__selects .vs__dropdown-menu  ,
+.rentFilter__selects .vs__dropdown-toggle  ,
 .rentFilter__selects .new-select:focus ,
 .rentFilter__selects select:focus ,
 .rentFilter__selects .new-select:hover ,
