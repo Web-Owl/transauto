@@ -32,7 +32,6 @@
             <div class="select">
                 <v-select v-model="selected" placeholder ='Выберите вид спецтехники' label="name" :options="rentCatalog__items" :reduce="rentCatalog__items => rentCatalog__items.name" class="FilterCategory" 
                 ></v-select>
-                <div>{{selected}}</div>
             </div>
                 <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-if="selected =='Вид спецтехники'">
                     <div class="rentCatalog__item" v-for="item in rentCatalog__items">
@@ -45,18 +44,39 @@
                         <div class="rentCatalog__link" ></div>
                     </div>                       
                 </div>
-                <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-else>
-                    <div class="rentCatalog__item" v-for="item in goods">
-                        <div v-if="selected == item.category">
-                            <div class="rentCatalog__img">
+                
+                <div class="goods" v-else>
+                    <div class="goods__list df fww">
+                        <template v-for="item in goods" :key="item.name">
+                            <div class="goods__item" v-if="item.category == selected">
+                                <div class="goods__itemName">
+                                    {{ item.name }}
+                                </div>
+                                <div class="goods__itemImg">
                                     <img :src="item.img_src" alt="">
-                            </div>
-                            <div class="rentCatalog__name">
-                                {{item.name}}
-                            </div>
-                            <div class="rentCatalog__link" ></div>
-                        </div>  
-                    </div>                     
+                                </div>
+                                <div class="goods__chars" v-if="item.characteristics">
+                                    <span>Характеристики</span>
+                                    <div class="goods__char" v-for="item in item.characteristics">
+                                        <img :src="item.img_src" alt="" />
+                                        {{item.name}} <span></span>
+                                        <b>{{item.value}}</b>
+                                    </div>
+                                </div>
+                                <div class="goods__po df fww aic">
+                                    <div class="goods__price">
+                                        <b>{{item.price_per_hour}}₽/Ч</b>
+                                        {{item.price_total}} ₽/смена
+                                    </div>
+                                    <div
+                                        class="yBtn goods__order showPdOrder"
+                                    >
+                                        Заказать
+                                    </div>
+                                </div>
+                            </div>                     
+                        </template>
+                    </div>
                 </div>
             </div>
         </div>

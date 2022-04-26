@@ -1,6 +1,7 @@
 export const goods = [
     {
         name: 'Гусеничный экскаватор Hyundai R330LC-9S',
+        category: 'Экскаватор',
         img_src: '../src/assets/img/iblock/9b6/b38934qhcs6eqz33j4z97xyr2b4zf1x2.jpg',
         price_per_hour: '2 200',
         price_total: '17 600',
@@ -133,6 +134,7 @@ export const goods = [
     },
     {
         name: 'Колесный экскаватор Hyundai R180W-9S',
+        category: 'Экскаваторы погрузчики',
         img_src: '../src/assets/img/iblock/4e5/qkn1z6nb87p1f8jv33fi47de2hbocqxc.jpg',
         price_per_hour: '1 950',
         price_total: '15 600',
@@ -212,6 +214,7 @@ export const goods = [
     },
     {
         name: 'Колесный экскаватор Hyundai R210W-9S',
+        category: 'Экскаваторы погрузчики',
         img_src: '../src/assets/img/iblock/03d/5r3h6cdtsn590tc6orh3t59zoxl8j410.jpg',
         price_per_hour: '2 075',
         price_total: '16 600',
@@ -254,6 +257,7 @@ export const goods = [
     },
     {
         name: 'Колесный экскаватор Hyundai 140W-7',
+        category: 'Экскаваторы погрузчики',
         img_src: '../src/assets/img/iblock/7bd/e8bnrq97cyf2jiqylkky3gvtoqt1oxcy.jpg',
         price_per_hour: '1 700',
         price_total: '13 600',
