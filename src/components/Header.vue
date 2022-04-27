@@ -1,8 +1,11 @@
 <script>
+import BaseModal from './BaseModal.vue';
   export default {
+    components:{BaseModal},
   data: function() {
     return {
-      isActive : false
+      isActive : false,
+      showModal: false
     } 
   },
     methods: {
@@ -69,7 +72,10 @@
                   <a href="tg://resolve?domain=OOOTransavto" target="_blank" rel="nofollow"><img src="../assets/img/telegram.svg" alt=""></a>
               </div>
           </div>
-          <div class="callback yBtn showCallBack">связаться с нами 24/7</div>
+          <div class="callback yBtn showCallBack" @click="showModal = true">связаться с нами 24/7</div>
       </div>
   </header>
+<Teleport to="body">
+    <BaseModal v-if="showModal" @closeModal="showModal = false"/>
+</Teleport>
 </template>

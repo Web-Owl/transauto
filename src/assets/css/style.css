@@ -2691,7 +2691,7 @@ label:hover .product__dopImg img {
 	position: relative;
 }
 .popUps__block {
-	position: absolute;
+	position: fixed;
 	z-index: 101;
 	left: 50%;
 	max-width: 100%;
@@ -2699,7 +2699,7 @@ label:hover .product__dopImg img {
 	transform: translate(-50%,0%);
 	box-shadow: 0 3px 5px 0 rgba(0,0,0,0.3);
 
-	display: none;
+	/* display: none; */
 }
 .popUps__block form label input {
 	display: none;
@@ -3361,3 +3361,7 @@ input:-webkit-autofill:active {
    -webkit-box-shadow: inset 0 0 0 50px #F8F8F8 ;
     -webkit-text-fill-color: #9B9B9B;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

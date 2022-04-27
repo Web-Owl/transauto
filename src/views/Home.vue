@@ -5,6 +5,7 @@
   import Offer from '../components/Offer.vue'
   import Benefits from '../components/Benefits.vue'
   import Goods from '../components/Goods.vue'
+  import BaseModal from '../components/BaseModal.vue';
 </script>
 
 <template>

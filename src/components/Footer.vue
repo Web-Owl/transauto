@@ -1,3 +1,14 @@
+<script>
+    import BaseModal from './BaseModal.vue';
+      export default {
+        components:{BaseModal},
+      data: function() {
+        return {
+          showModal: false
+        } 
+      },
+    }
+    </script>
 <template>
     <footer class="footer">
         <div class="contentData">
@@ -48,13 +59,10 @@
                             ул. Советская, д.19, офис 7,8 этаж 1</a>
                     </div>
                 </div>
-                <div class="writeback yBtn iconInk showCallBack2">напишите нам</div>
+                <div class="writeback yBtn iconInk showCallBack2"  @click="showModal = true">напишите нам</div>
             </div>
             <div class="footer__bot df fww aic">
-                <div class="dev">Разработка:
-                    <a href="https://marketingup.ru/" target="_blank"></a>
-                </div>
-                <div class="cop">2021 © Все права защищены</div>
+                <div class="cop">2022 © Все права защищены</div>
                 <div class="download">
                     <a href="/requisite.pdf">Скачать реквизиты</a>
                 </div>
@@ -65,4 +73,7 @@
             </div>
         </div>
     </footer>
+<Teleport to="body">
+    <BaseModal v-if="showModal" @closeModal="showModal = false"/>
+</Teleport>
 </template>
