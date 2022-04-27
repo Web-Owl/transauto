@@ -7,17 +7,13 @@ export default {
 	  phone: String
   },
   methods: {
-	send() {
-		return axios.post(`../public/ajax/send.php`, {
+	send: function () {
+		return axios.post(`/ajax/send.php`, {
 			firstName: 'Fred',
 			lastName: 'Flintstone'
-		}
-	)
-  },
-  created() {
-	
-  }
-}
+			})
+		},
+	}
 }
 </script>
 <template>
@@ -42,7 +38,7 @@ export default {
         <input type="hidden" name="MOZG" value="1">
         <input type="hidden" name="links" value="/">
         <input type="hidden" name="subject" value="Условия аренды"> 			
-				<input class="yBtn SND_AJAX_ARENDA" type="submit" value="Заказать" @click="send()">
+				<input class="yBtn SND_AJAX_ARENDA" type="submit" value="Заказать" @click="send">
 			</div>
 		</form>
 	</div>
