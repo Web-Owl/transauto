@@ -8,44 +8,44 @@
         } 
       },
     }
-    </script>
+</script>
 <template>
     <footer class="footer">
         <div class="contentData">
-            <a href="/" class="logo"><img src="../assets/img/logo.svg" alt=""></a>
+            <a href="/" class="logo"><img src="../assets/img/logo.png" alt=""></a>
             <div class="footer__data df fww">
                 <div class="footer__dataItem">
                     <a href="/arenda/">Аренда спецтехники</a>
                     <ul>
-                        <li><a href="/arenda/samosvaly/">Самосвалы</a></li>
-                        <li><a href="/arenda/ekskavatory-pogruzchiki/">Экскаваторы погрузчики</a></li>
-                        <li><a href="/arenda/kolesnye-ekskavatory/">Колесные экскаваторы</a></li>
-                        <li><a href="/arenda/gusenichnye-ekskavatory/">Гусеничные экскаваторы</a></li>
-                        <li><a href="/arenda/avtokrany/">Автокраны</a></li>
-                        <li><a href="/arenda/manipulyatory/">Манипуляторы</a></li>
-                        <li><a href="/arenda/kommunalnye-traktory/">Коммунальные тракторы</a></li>
-                        <li><a href="/arenda/mini-pogruzchiki/">Мини-погрузчики</a></li>
+                        <li>Самосвалы</li>
+                        <li>Экскаваторы погрузчики</li>
+                        <li>Колесные экскаваторы</li>
+                        <li>Гусеничные экскаваторы</li>
+                        <li>Автокраны</li>
+                        <li>Манипуляторы</li>
+                        <li>Коммунальные тракторы</li>
+                        <li>Мини-погрузчики</li>
                     </ul>
                 </div>
                 <div class="footer__dataItem">
                     <a href="/services/">Услуги</a>
                     <ul>
-                        <li><a href="/services/vyvoz-grunta/">Вывоз грунта</a></li>
-                        <li><a href="/services/dostavka-peska-i-shchebnya-nerudnykh-materialov/">Доставка песка и щебня (Нерудных материалов)</a></li>
-                        <li><a href="/services/vyvoz-stroitelnogo-musora/">Вывоз строительного мусора</a></li>
-                        <li><a href="/services/perevozka-spetstekhniki-i-negabaritnykh-gruzov/">Перевозка спецтехники и негабаритных грузов</a></li>
-                        <li><a href="/services/razrabotka-katlovanov/">Разработка котлованов</a></li>
-                        <li><a href="/services/rukava-vysokogo-davleniya-izgotovlenie-i-remont/">Рукава высокого давления (изготовление и ремонт)</a></li>
+                        <li>Вывоз строительного мусора с утилизацией</li>
+                        <li>Вывоз мусора контейнерами</li>
+                        <li>Вывоз твердых отходов</li>
+                        <li>Вывоз снега</li>
+                        <li>Утилизация снега</li>
+                        <li>Вывоз грунта с утилизацией</li>
+                        <li>Разработка котлованов и траншей</li>
+                        <li>Демонтаж зданий</li>
                     </ul>
                 </div>
                 <div class="footer__dataItem">
                     <a href="/about/">О компании</a>
                     <ul>
-                        <li><a href="/brands/">Марки спецтехники</a></li>
-                        <li><a href="/actions/">Акции</a></li>
-                        <li><a href="/reviews/">Отзывы</a></li>
-                        <li><a href="/blog/">Блог</a></li>
-                        <li><a href="/contacts/">Контакты</a></li>
+                        <li>Марки спецтехники</li>
+                        <li>Блог</li>
+                        <li>Контакты</li>
                     </ul>
                 </div>
                 <div class="footer__dataItem">
@@ -68,7 +68,6 @@
                 </div>
                 <div class="links">
                     <a href="/confidance/">Политика конфиденциальности</a>
-                    <a href="/sitemap/">Карта сайта</a>
                 </div>
             </div>
         </div>

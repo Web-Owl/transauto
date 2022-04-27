@@ -24,6 +24,11 @@
                 
             };
         },
+        methods: {
+        getImageUrl(name) {
+                return new URL(`../assets/img/brands/${name}`, import.meta.url).href
+            }
+        },
         data() {
             return {
                 brands: brands
@@ -56,7 +61,7 @@
     >
         <swiper-slide class="mSpec__item" v-for="item in brands">
             <a>
-                <img :src="item.img_src" alt="" style="max-height: 85px;">
+                <img :src="getImageUrl(item.image)" alt="" style="max-height: 85px;">
             </a>
         </swiper-slide>
     </swiper>

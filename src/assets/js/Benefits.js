@@ -9,27 +9,27 @@ export const benefits = [
     },
     {
         name: 'АИС «ОССиГ»',
-        image: '/eaa/dqdx24cnaw0h6clxywhnzarpy87ryf0w.svg'
+        image: 'dqdx24cnaw0h6clxywhnzarpy87ryf0w'
     },
     {
         name: 'Пропуск в Москву 24/7 ',
-        image: '/090/bchcjy83un3l8kij6o6z1cbfal4eiegs.svg'
+        image: 'bchcjy83un3l8kij6o6z1cbfal4eiegs'
     },
     {
         name: ' Оператор включен',
-        image: '/2a2/t4x69ipjd2lcnsurvm71fw71znn8224f.svg'
+        image: 't4x69ipjd2lcnsurvm71fw71znn8224f'
     },
     {
         name: 'Бензин включен',
-        image: '/50a/j9c2jute2dvxhtwrwipwj3bgisdoul9n.svg'
+        image: 'j9c2jute2dvxhtwrwipwj3bgisdoul9n'
     },
     {
         name: 'Опытные водители и машинисты',
-        image: '/002/y4vccfo83cf3r5csazxctn3598lppzmd.svg'
+        image: 'y4vccfo83cf3r5csazxctn3598lppzmd'
     },
     {
         name: ' Низкие цены в Москве и области',
-        image: '/c94/aiohrutox9alarxvl2dp4j9ptb9yl5vq.svg'
+        image: 'aiohrutox9alarxvl2dp4j9ptb9yl5vq'
     },
 ]
 export default benefits;

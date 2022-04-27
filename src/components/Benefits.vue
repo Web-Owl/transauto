@@ -1,7 +1,6 @@
 <script>
     import benefits from '../assets/js/Benefits.js';
     export default {
-
     methods: {
         getImageUrl(name) {
             return new URL(`../assets/img/benefits/${name}.svg`, import.meta.url).href

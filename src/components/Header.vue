@@ -48,7 +48,7 @@ import BaseModal from './BaseModal.vue';
   <div class="spopup"></div>
   <header class="header">
       <div class="contentData df fww aic">
-          <router-link to="/" class="logo"><img src="../assets/img/logo.svg" alt="logo"></router-link>
+          <router-link to="/" class="logo"><img src="../assets/img/logo.png" alt="logo"></router-link>
           <ul class="nav df">
               <li>
                   <router-link to="/arenda" class="hidden md:block">Аренда спецтехники</router-link>

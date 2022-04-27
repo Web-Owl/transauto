@@ -1,3 +1,14 @@
+<script>
+    import BaseModal from './BaseModal.vue';
+      export default {
+        components:{BaseModal},
+      data: function() {
+        return {
+          showModal: false
+        } 
+      },
+    }
+</script>
 <template>
     <div class="map">
 			<!-- <div id="map_canvas"></div> -->
@@ -20,10 +31,13 @@
 				  <a href="/requisite.pdf">Скачать реквизиты</a>					
 				</div>
 				<div class="map__actions">
-					<div class="yBtn connect24_7 showCallBack">связаться с нами 24/7</div>
+					<div class="yBtn connect24_7 showCallBack" @click="showModal = true">связаться с нами 24/7</div>
 					<div class="map__actionsSoc">
 						<a href="https://wa.me/+79175170350" target="_blank" rel="nofollow"><img src="../assets/img/whatsapp.svg" alt=""></a><a href="tg://resolve?domain=OOOTransavto" target="_blank" rel="nofollow"><img src="../assets/img/telegram.svg" alt=""></a>					</div>
 				</div>
 			</div>
 		</div>
+<Teleport to="body">
+	<BaseModal v-if="showModal" @closeModal="showModal = false"/>
+</Teleport>
 </template>
