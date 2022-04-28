@@ -27,6 +27,11 @@
                 }
             };
         },
+        methods: {
+        getImageUrl(name) {
+                return new URL(`../assets/img/iblock/${name}`, import.meta.url).href
+            }
+        },
         data() {
             return {
                 goods: goods
@@ -78,7 +83,7 @@
           </div>
           <div class="goods__itemImg">
             <img
-              :src="item.img_src"
+              :src="getImageUrl(item.image)"
               alt=""
             />
           </div>
@@ -86,7 +91,7 @@
         <div class="goods__chars" v-if="item.characteristics">
           <span>Характеристики</span>
           <div class="goods__char" v-for="item in item.characteristics">
-            <img :src="item.img_src" alt="" />
+            <img :src="getImageUrl(item.image)" alt="" />
             {{item.name}} <span></span>
             <b>{{item.value}}</b>
           </div>

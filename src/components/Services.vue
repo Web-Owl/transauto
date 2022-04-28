@@ -1,6 +1,11 @@
 <script>
     import services from '../assets/js/Services.js';
     export default {
+    methods: {
+        getImageUrl(name) {
+                return new URL(`../assets/img/iblock/${name}`, import.meta.url).href
+            }
+        },
         data() {
             return {services: services}
         }
@@ -10,7 +15,7 @@
     <div class="services contentData">
         <div class="services__list df fww">
             <div class="services__item" v-for="item in services">
-                <div class="services__img"><img :src="item.img_src" alt=""></div>
+                <div class="services__img"><img :src="getImageUrl(item.image)" alt=""></div>
                 <div class="services__data">
                     <div class="services__name">
                         <a>{{item.name}}</a>

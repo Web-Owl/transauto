@@ -4,6 +4,8 @@
   import Map from './components/Map.vue'
   import BaseModal from './components/BaseModal.vue';
 </script>
+
+
 <template>
   <div class="wrapper">
     <Header/>

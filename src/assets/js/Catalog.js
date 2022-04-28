@@ -2,68 +2,68 @@
 export const rentCatalog__items = [
     {
         name: 'Самосвал',
-        img_src: '/img/iblock/a87/d31u8cy79jjpb0j8gw7zaz7arodg1pt7.png',
+        image: 'd31u8cy79jjpb0j8gw7zaz7arodg1pt7.jpg',
     },
     {
         name: 'Экскаваторы погрузчики',
-        img_src: '/img/iblock/456/ny3w1axm7so3ynxaotpw9oct0j3p492r.png'
+        image: 'ny3w1axm7so3ynxaotpw9oct0j3p492r.jpg'
     },
     {
         name: 'Колесные экскаваторы',
-        img_src: '/img/iblock/ee8/w8ntdkqwbp4vwbb86wonj06uh96lqv32.png'
+        image: 'w8ntdkqwbp4vwbb86wonj06uh96lqv32.jpg'
     },
     {
         name: 'Гусеничные экскаваторы',
-        img_src: '/img/iblock/136/5ee74u0213b081w6jvz4mbjxxpa15ev8.png'
+        image: '5ee74u0213b081w6jvz4mbjxxpa15ev8.jpg'
     },
     {
         name: 'Автокраны',
-        img_src: '/img/iblock/a72/hlutz0zyrylk3j7aa0sxvqe3px1zh0mk.png'
+        image: 'hlutz0zyrylk3j7aa0sxvqe3px1zh0mk.jpg'
     },
     {
         name: 'Манипуляторы',
-        img_src: '/img/iblock/a53/cawphgfme1n3lkph892v6ev041hj7sx1.png'
+        image: 'cawphgfme1n3lkph892v6ev041hj7sx1.jpg'
     },
     {
         name: 'Тралы',
-        img_src: '/img/iblock/ca9/px1yv54sw90oez4sjisofe0zcizts35e.png'
+        image: 'px1yv54sw90oez4sjisofe0zcizts35e.jpg'
     },
     {
         name: 'Гидромолоты',
-        img_src: '/img/iblock/4fb/77xlkbgkj1iziaw8knreb501egeinkwy.png'
+        image: '77xlkbgkj1iziaw8knreb501egeinkwy.jpg'
     },
     {
         name: 'Длинномеры',
-        img_src: '/img/iblock/652/sj63wk8dew97abjakq8zyps5uj7jumdn.png'
+        image: 'sj63wk8dew97abjakq8zyps5uj7jumdn.jpg'
     },
     {
         name: 'Тракторы',
-        img_src: '/img/iblock/f1c/wztbohztx9ir3wo8zg34swpzawmdmv9e.png'
+        image: 'wztbohztx9ir3wo8zg34swpzawmdmv9e.jpg'
     },
     {
         name: 'Коммунальные тракторы',
-        img_src: '/img/iblock/9e4/aci9lio9tuxugh71y2nqq77hg6srp3p8.png'
+        image: 'aci9lio9tuxugh71y2nqq77hg6srp3p8.jpg'
     },
     {
         name: 'Бульдозеры',
-        img_src: '/img/iblock/1d4/f52lb7wyd5uxsrpvke1u54qhsgbdcrla.png'
+        image: 'f52lb7wyd5uxsrpvke1u54qhsgbdcrla.jpg'
     },
     {
         name: 'Мини-погрузчики',
-        img_src: '/img/iblock/0a9/pwpzn7n4j0e90l9padfpw51yeypodq10.png'
+        image: 'pwpzn7n4j0e90l9padfpw51yeypodq10.jpg'
     },
     {
         name: 'Автовышки',
-        img_src: '/img/iblock/966/1otw6rowclampxzljrrybb8ytynabtw5.png'
+        image: '1otw6rowclampxzljrrybb8ytynabtw5.jpg'
     },
     {
         name: 'Дорожные катки',
-        img_src: '/img/iblock/16f/dg014l1yp4vd9yuthzezym15vgblqb5m.png'
+        image: 'dg014l1yp4vd9yuthzezym15vgblqb5m.jpg'
     },
     {
         name: 'Грунтовые катки',
-        img_src: '/img/iblock/6ef/eju2nzwlxxt5zo7mfbjfruhjjv6274jp.png'
+        image: 'eju2nzwlxxt5zo7mfbjfruhjjv6274jp.jpg'
     },
 
 ]
-export default rentCatalog__items;
+export default rentCatalog__items ;
