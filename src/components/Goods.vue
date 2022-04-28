@@ -6,6 +6,7 @@
     import 'swiper/css/navigation';
     SwiperCore.use([Pagination, Navigation]);
     export default {
+
         components: {
             Swiper,
             SwiperSlide,
@@ -102,7 +103,7 @@
             {{item.price_total}} ₽/смена
           </div>
           <div
-            class="yBtn goods__order showPdOrder"
+            class="yBtn goods__order showPdOrder" @click="$emit('openModal')"
           >
             Заказать
           </div>

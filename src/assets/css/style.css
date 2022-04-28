@@ -2692,6 +2692,7 @@ label:hover .product__dopImg img {
 }
 .popUps__block {
 	position: fixed;
+	top: 0;
 	z-index: 101;
 	left: 50%;
 	max-width: 100%;

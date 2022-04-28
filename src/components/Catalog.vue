@@ -16,14 +16,14 @@
 
 <template>
     <div class="rentCatalog rentCatalog--mb155 contentData df fww">
-        <div class="rentCatalog__item" v-for="item in rentCatalog__items">
+        <div class="rentCatalog__item" v-for="item in rentCatalog__items" @click="$emit('openModal')">
             <div class="rentCatalog__img">
                 <img :src="getImageUrl(item.image)" alt="">
             </div>
             <div class="rentCatalog__name">
                 {{item.name}}
             </div>
-            <div class="rentCatalog__link"></div>
+            <div class="rentCatalog__link" ></div>
             <a></a>
         </div>
     </div>

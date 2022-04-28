@@ -1,14 +1,3 @@
-<script>
-    import BaseModal from './BaseModal.vue';
-      export default {
-        components:{BaseModal},
-      data: function() {
-        return {
-          showModal: false
-        } 
-      },
-    }
-</script>
 <template>
     <div class="map">
 			<!-- <div id="map_canvas"></div> -->
@@ -19,8 +8,7 @@
 				</div>
 				<div class="map__address">
 					<b>Наш адрес:</b>
-					<a href="/contacts/">143904, Московская область, г. Балашиха, <br>
-ул. Советская, д.19, офис 7,8 этаж 1</a>				</div>
+					<a href="/contacts/">143904, Московская область, г. Балашиха, <br> ул. Советская, д.19, офис 7,8 этаж 1</a>				</div>
 				<div class="map__phones">
 					<b>Телефоны:</b>
 					<a href="tel:79175170350">+7 (917) 517-03-50</a>				</div>
@@ -31,13 +19,10 @@
 				  <a href="/requisite.pdf">Скачать реквизиты</a>					
 				</div>
 				<div class="map__actions">
-					<div class="yBtn connect24_7 showCallBack" @click="showModal = true">связаться с нами 24/7</div>
+					<div class="yBtn connect24_7 showCallBack" @click="$emit('openModal')">связаться с нами 24/7</div>
 					<div class="map__actionsSoc">
 						<a href="https://wa.me/+79175170350" target="_blank" rel="nofollow"><img src="../assets/img/whatsapp.svg" alt=""></a><a href="tg://resolve?domain=OOOTransavto" target="_blank" rel="nofollow"><img src="../assets/img/telegram.svg" alt=""></a>					</div>
 				</div>
 			</div>
 		</div>
-<Teleport to="body">
-	<BaseModal v-if="showModal" @closeModal="showModal = false"/>
-</Teleport>
 </template>
