@@ -40,12 +40,10 @@
                 <div class="footer__dataItem">
                     <a href="/contacts/">Контакты</a>
                     <div class="phones">
-                        <a href="tel:79175170350">+7 (917) 517-03-50</a>
+                        <a href="tel:79162716060">+7 (916) 271-60-60</a>
                     </div>
                     <div class="address">
-                        <a href="/contacts/">143904, Московская область, г. Балашиха,
-                            <br>
-                            ул. Советская, д.19, офис 7,8 этаж 1</a>
+                        <a href="/contacts/">Малая летовская 10, Д. Сосенки, Москва</a>
                     </div>
                 </div>
                 <div class="writeback yBtn iconInk showCallBack2"  @click="$emit('openModal')">напишите нам</div>
@@ -53,10 +51,10 @@
             <div class="footer__bot df fww aic">
                 <div class="cop">2022 © Все права защищены</div>
                 <div class="download">
-                    <a href="/requisite.pdf">Скачать реквизиты</a>
+                    <!-- <a href="/requisite.pdf">Скачать реквизиты</a> -->
                 </div>
                 <div class="links">
-                    <a href="/confidance/">Политика конфиденциальности</a>
+                    <!-- <a href="/confidance/">Политика конфиденциальности</a> -->
                 </div>
             </div>
         </div>

@@ -43,7 +43,7 @@ export default {
                     в Москве <br>и области
                 </div>
                 <div class="b1__call">Звоните:
-                    <a href="tel:79175170350">+7 (917) 517-03-50</a>
+                    <a href="tel:79162716060">+7 (916) 271-60-60</a>
                 </div>
             </div>
             <div class="wf">

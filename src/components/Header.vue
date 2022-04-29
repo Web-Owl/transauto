@@ -62,11 +62,11 @@
           </ul>
           <div class="head_contacts df aic">
               <div class="phones">
-                  <a href="tel:79175170350">+7 (917) 517-03-50</a>
+                  <a href="tel:79162716060">+7 (916) 271-60-60</a>
               </div>
               <div class="socials df aic">
-                  <a href="https://wa.me/+79175170350" target="_blank" rel="nofollow"><img src="../assets/img/whatsapp.svg" alt=""></a>
-                  <a href="tg://resolve?domain=OOOTransavto" target="_blank" rel="nofollow"><img src="../assets/img/telegram.svg" alt=""></a>
+                  <!-- <a href="https://wa.me/+79175170350" target="_blank" rel="nofollow"><img src="../assets/img/whatsapp.svg" alt=""></a>
+                  <a href="tg://resolve?domain=OOOTransavto" target="_blank" rel="nofollow"><img src="../assets/img/telegram.svg" alt=""></a> -->
               </div>
           </div>
           <div class="callback yBtn showCallBack" @click="$emit('openModal')">связаться с нами 24/7</div>
