@@ -7,7 +7,7 @@
   import Goods from '../components/Goods.vue'
 </script>
 <template>
-  <Request title="ЗАЯВКА НА АРЕНДУ СПЕЦТЕХНИКИ"/>
+  <Request title="ЗАЯВКА НА АРЕНДУ СПЕЦТЕХНИКИ" @form-send="$emit('formSend')"/>
   <div class="sectionTitle sectionTitle--mb90 tac"><h1>Аренда спецтехники</h1></div>
   <Catalog @open-modal="$emit('isOpened')"/> 
   <div class="sectionTitle sectionTitle--mb110 tac">марки спецтехники</div>

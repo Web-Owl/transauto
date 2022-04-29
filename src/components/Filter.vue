@@ -12,6 +12,11 @@
         computed: {
             
         },
+        methods: {
+        getImageUrl(name) {
+                return new URL(`../assets/img/iblock/${name}`, import.meta.url).href
+            }
+        },
         data() {
             return {
                 rentCatalog__items: rentCatalog__items,
@@ -36,12 +41,12 @@
                 <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-if="selected =='Вид спецтехники'">
                     <div class="rentCatalog__item" v-for="item in rentCatalog__items">
                         <div class="rentCatalog__img" >
-                                <img :src="item.img_src" alt="">
+                                <img :src="getImageUrl(item.image)" alt="">
                         </div>
                         <div class="rentCatalog__name">
                             {{item.name}}
                         </div>
-                        <div class="rentCatalog__link" ></div>
+                        <div class="rentCatalog__link" @click="$emit('openModal')"></div>
                     </div>                       
                 </div>
                 
@@ -53,12 +58,12 @@
                                     {{ item.name }}
                                 </div>
                                 <div class="goods__itemImg">
-                                    <img :src="item.img_src" alt="">
+                                    <img :src="getImageUrl(item.image)" alt="">
                                 </div>
                                 <div class="goods__chars" v-if="item.characteristics">
                                     <span>Характеристики</span>
                                     <div class="goods__char" v-for="item in item.characteristics">
-                                        <img :src="item.img_src" alt="" />
+                                        <img :src="getImageUrl(item.image)" alt="" />
                                         {{item.name}} <span></span>
                                         <b>{{item.value}}</b>
                                     </div>
@@ -69,7 +74,7 @@
                                         {{item.price_total}} ₽/смена
                                     </div>
                                     <div
-                                        class="yBtn goods__order showPdOrder"
+                                        class="yBtn goods__order showPdOrder" @click="$emit('openModal')"
                                     >
                                         Заказать
                                     </div>

@@ -14,7 +14,7 @@
 					<a href="tel:79175170350">+7 (917) 517-03-50</a>				</div>
 				<div class="map__email">
 					<b>E-mail:</b>
-					<a href="mailto:info@transauto-rent.ru">info@transauto-rent.ru</a>				</div>
+					<a href="mailto:zakaz@yugo-zapad.com">zakaz@yugo-zapad.com</a>				</div>
 				<div class="map__download">
 				  <a href="/requisite.pdf">Скачать реквизиты</a>					
 				</div>

@@ -1,7 +1,35 @@
 <script>
+import JustValidate from 'just-validate';
+import axios from 'axios'
 export default {
   props: {
       title: String
+  },
+  methods: {
+	  masked() {
+		   var selector = this.$el.querySelector('input[name="PHONE"]');
+		   var im = new Inputmask('+7 (999) 999-99-99');
+		   im.mask(selector)
+	  },
+      send: function () {
+      let formData = new FormData(requestForm);
+      ym(88437916,'reachGoal','send_form')
+		  return axios.post(`/ajax/send.php`, formData)
+		},
+  },
+  mounted() {
+	  const validate = new JustValidate('#requestForm');
+	  validate.addField('#phone', [
+		{
+			rule: 'required',
+			errorMessage: 'Введите телефон'
+		},
+	])
+	.onSuccess((event) => {
+    	console.log('Validation passes and form submitted', event);
+		this.send();
+		alert('Форма успешно отправлена!')
+  })
   }
 }
 </script>
@@ -25,9 +53,9 @@ export default {
                 <div class="wf__text">
                     Мы перезвоним Вам за 1 минуту
                 </div>
-                <form action="javascript:void(null)" id="MyFRM_CALS3">
-                    <input type="text" placeholder="Ваше Имя" name="NAME" id="NAME_CALS3">
-                    <input type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" id="PHONE_CALS3">
+                <form @submit.prevent id="requestForm">
+                    <label for="phone"></label>
+			<input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
                     <label class="LABEL_CHECK" data-id="CHECK_CALS3">
                         <input type="checkbox" checked="checked" id="CHECK_CALS3" value="1">
                         <span></span>
@@ -37,7 +65,7 @@ export default {
                         <input type="hidden" name="MOZG" value="1">
                         <input type="hidden" name="links" value="/">
                         <input type="hidden" name="subject" value="Аренда спецтехники">
-                        <input class="yBtn SND_AJAX_CALS3" type="submit" value="Заказать">
+                        <input class="yBtn" type="submit" value="Заказать" id="submit-btn">
                     </div>
                 </form>
             </div>

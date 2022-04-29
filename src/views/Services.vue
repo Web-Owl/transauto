@@ -5,9 +5,9 @@
     import Offer from '../components/Offer.vue'
 </script>
 <template>
-    <Request title="ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ"/>
+    <Request title="ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ" @form-send="$emit('formSend')"/>
     <div class="sectionTitle tac">наши услуги</div>
-    <Services/>
+    <Services @open-modal="$emit('isOpened')"/>
     <Description>
         <img src="../assets/img/about.jpg" alt="" class="text__imgR">
         <h1 class="pageTitle">

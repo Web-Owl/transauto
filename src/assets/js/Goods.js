@@ -21,6 +21,7 @@ export const goods = [
     {
         name: 'Автокран Галичанин - 25 тонн',
         image: '99dsfhikurc7kz7u2y2l1v3o6b134sk2.jpg',
+        category: 'Автокраны',
         price_per_hour: '1 575',
         price_total: '12 600',
         characteristics:[
@@ -39,6 +40,7 @@ export const goods = [
     {
         name: 'Манипулятор КАМАЗ-65117 7 тонн',
         image: '4o11ewrm44likbxnalcd36pti1d8myd9.jpg',
+        category: 'Манипуляторы',
         price_per_hour: '1 650',
         price_total: '13 200',
         characteristics:[
@@ -57,6 +59,7 @@ export const goods = [
     {
         name: 'Низкорамный трал 35-45 тонн',
         image: 'zooybktx4ngp5363peg8xnbw77p4ledl.jpg',
+        category: 'Тралы',
         price_per_hour: '2 000',
         price_total: '16 000',
         characteristics:[
@@ -75,6 +78,7 @@ export const goods = [
     {
         name: 'Длинномер КАМАЗ - 13,7 метров',
         image: 'i0t4uqy2rgnvrjl230m26gas28xeckog.jpg',
+        category: 'Длинномеры',
         price_per_hour: '1 575',
         price_total: '12 600',
         characteristics:[
@@ -93,6 +97,7 @@ export const goods = [
     {
         name: 'Трактор МТЗ 82МК',
         image: '083ddo5awdiwp5mjhsgurqirj9ox3uqz.jpg',
+        category: 'Тракторы',
         price_per_hour: '1 375',
         price_total: '11 000',
         characteristics:[
@@ -111,6 +116,7 @@ export const goods = [
     {
         name: 'Мини-погрузчик Bobcat s530',
         image: '083ddo5awdiwp5mjhsgurqirj9ox3uqz.jpg',
+        category: 'Мини-погрузчики',
         price_per_hour: '1 500',
         price_total: '10 200',
         characteristics:[
@@ -129,6 +135,7 @@ export const goods = [
     {
         name: 'МТЗ 82.1',
         image: 'zfftr9hljy8uvcn4809wxmesewk31tjo.jpg',
+        category: 'Мини-погрузчики',
         price_per_hour: '1 250',
         price_total: '10 000'
     },
@@ -154,6 +161,7 @@ export const goods = [
     {
         name: 'Экскаватор-погрузчик JCB 3CX Super',
         image: 'ac2h066vo46nd9gthpysfga6e2wl8rye.jpg',
+        category: 'Экскаваторы погрузчики',
         price_per_hour: '1 500',
         price_total: '12 000',
         characteristics:[
@@ -191,6 +199,7 @@ export const goods = [
     {
         name: 'Автокран Галичанин - 32 тонны',
         image: 'vp30mfadbd10o2h9wdbo274ie87j3wtq.jpg',
+        category: 'Автокраны',
         price_per_hour: '1 700',
         price_total: '13 600',
         characteristics:[
@@ -209,6 +218,7 @@ export const goods = [
     {
         name: 'Мини-погрузчик Bobcat S130',
         image: 'kjzq08cucy7109ad199xcrluftt22d3n.jpg',
+        category: 'Мини-погрузчики',
         price_per_hour: '900',
         price_total: '7 200'
     },
@@ -234,6 +244,7 @@ export const goods = [
     {
         name: 'Экскаватор-погрузчик JCB 3CX',
         image: 'q3ugwdzdqxf4pk5mmhawitpb40z2m0uf.jpg',
+        category: 'Экскаваторы погрузчики',
         price_per_hour: '1 625',
         price_total: '13 000',
         characteristics:[
@@ -252,6 +263,7 @@ export const goods = [
     {
         name: 'Мини-погрузчик Bobcat S175',
         image: '24xo7dqqvr4h4ug5aw9hllzqpl9mstny.jpg',
+        category: 'Мини-погрузчики',
         price_per_hour: '1 125',
         price_total: '9 000'
     },
@@ -277,12 +289,14 @@ export const goods = [
     {
         name: 'Мини-погрузчик Bobcat S150',
         image: 'e1slyprbs0ekgftmyd6m5z9w0n0blnj3.jpg',
+        category: 'Мини-погрузчики',
         price_per_hour: '1 200',
         price_total: '9 600'
     },
     {
         name: 'Автокран Клинцы - 25 тонн',
         image: '0dt0zhqzfuti0zq2bhesk9p3egm0kbsk.jpg',
+        category: 'Автокраны',
         price_per_hour: '1 325',
         price_total: '10 600',
         characteristics:[
@@ -301,6 +315,7 @@ export const goods = [
     {
         name: 'Мини-погрузчик Bobcat Т590 болотный',
         image: 'a0vyht21tbzz8i2ynk9aprenizarlln1.jpg',
+        category: 'Мини-погрузчики',
         price_per_hour: '1 700',
         price_total: '13 600'
     },

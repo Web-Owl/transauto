@@ -4,8 +4,8 @@
   import Filter from '../components/Filter.vue';
 </script>
 <template>
-  <Filter />
-  <Goods/>
+  <Filter @open-modal="$emit('isOpened')"/>
+  <Goods @open-modal="$emit('isOpened')"/>
   <Description>
     <div class="seoBlock contentData">
   <div class="sectionTitle">

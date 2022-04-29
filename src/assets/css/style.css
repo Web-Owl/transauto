@@ -1979,6 +1979,7 @@ label:hover .product__dopImg img {
 }
 .services__link a:hover {
 	background-color: #fff;
+	cursor: pointer;
 }
 .services__link a {
 	display: inline-block;

@@ -1,23 +1,47 @@
+<script>
+import Inputmask from "inputmask";
+import JustValidate from 'just-validate';
+import axios from 'axios'
+export default {
+methods: {
+	  masked() {
+		   var selector = this.$el.querySelector('input[name="PHONE"]');
+		   var im = new Inputmask('+7 (999) 999-99-99');
+		   im.mask(selector)
+	  },
+     send: function () {
+      let formData = new FormData(modalForm);
+      // formData.append('NAME', this.nam,.value);
+      // formData.append('PHONE', this.phone);
+      ym(88437916,'reachGoal','send_form')
+		  return axios.post(`/ajax/send.php`, formData)
+		},
+  },
+   
+  mounted() {
+	  const validate = new JustValidate('#modalForm');
+	  validate.addField('#phone', [
+		{
+			rule: 'required',
+			errorMessage: 'Введите телефон'
+		},
+	])
+	.onSuccess((event) => {
+    	console.log('Validation passes and form submitted', event);
+		this.send();
+		alert('Форма успешно отправлена!')
+  })
+  }
+}
+</script>
 <template>
   <div class="popUps__block">
     <div class="popUps__blockInner">
       <div class="popUps__close" @click="$emit('closeModal')"></div>
       <div class="popUps__title TitleFormCart">Заказать</div>
-      <form action="javascript:void(null)" id="MyFRM1">
-        <input
-          maxlength="50"
-          type="text"
-          placeholder="Ваше Имя"
-          name="NAME"
-          id="NAME1"
-        />
-        <input
-          type="text"
-          placeholder="+7 (___) ___ - __- __"
-          name="PHONE"
-          id="PHONE1"
-        />
-        <input type="email" placeholder="Email" name="EMAIL" id="EMAIL1" />
+      <form @submit.prevent id="modalForm">
+      <label for="phone"></label>
+			<input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
         <label class="LABEL_CHECK" data-id="CHECK1">
           <input type="checkbox" checked="checked" id="CHECK1" value="1" />
           <span></span>
@@ -25,16 +49,7 @@
             >политикой конфиденциальности</a
           >
         </label>
-        <input type="hidden" name="MOZG" value="1" />
-        <input type="hidden" name="links" id="links1" value="/services/" />
-        <input
-          type="hidden"
-          name="subject"
-          id="subject1"
-          value="Заказать технику"
-        />
-        <input type="hidden" name="oborudovanie" id="oborudovanie1" value="" />
-        <input class="yBtn SND_AJAX1" type="submit" value="отправить" />
+        <input class="yBtn" type="submit" value="отправить" id="submit-btn"/>
       </form>
     </div>
   </div>

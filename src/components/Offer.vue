@@ -1,37 +1,27 @@
 <script>
-import Inputmask from "inputmask";
 import JustValidate from 'just-validate';
+import axios from 'axios'
 export default {
   props: {
       title: String,
       text: String,
 	  phone: String
   },
-  data() {
-	  return {
-		  isValid: false
-	  }
-  },
   methods: {
 	  masked() {
 		   var selector = this.$el.querySelector('input[name="PHONE"]');
 		   var im = new Inputmask('+7 (999) 999-99-99');
 		   im.mask(selector)
-	  }
+	  },
+	  send: function () {
+      let formData = new FormData(offerForm);
+	  ym(88437916,'reachGoal','send_form')
+		  return axios.post(`/ajax/send.php`, formData)
+		},
   },
   mounted() {
-	  const validate = new JustValidate('#form');
-	  validate.addField('#name', [
-		{
-			rule: 'minLength',
-			value: 3,
-		},
-		{
-			rule: 'maxLength',
-			value: 30,
-		},
-	])
-	.addField('#phone', [
+	  const validate = new JustValidate('#offerForm');
+	  validate.addField('#phone', [
 		{
 			rule: 'required',
 			errorMessage: 'Введите телефон'
@@ -39,7 +29,7 @@ export default {
 	])
 	.onSuccess((event) => {
     	console.log('Validation passes and form submitted', event);
-		this.$emit('formSend')
+		this.send();
 		alert('Форма успешно отправлена!')
   })
   }
@@ -54,9 +44,7 @@ export default {
 		<div class="formOrder__text"><p v-html="text"></p> 
 		<slot></slot>
 		</div>
-		<form action="" id="form">
-			<label for="name"></label>
-			<input class="form-check-input" type="text" placeholder="Ваше Имя" name="NAME" id="name">
+		<form action="" @submit.prevent id="offerForm">
 			<label for="phone"></label>
 			<input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
 			<label class="LABEL_CHECK">
