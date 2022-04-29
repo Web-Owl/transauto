@@ -806,6 +806,7 @@ header .callback {
 .formOrder form input[type="text"]:focus {
 	border-color: #FFBB00;
 }
+
 .formOrder form input[type="email"] ,
 .formOrder form input[type="text"] {
 	box-sizing: border-box;
@@ -3361,6 +3362,10 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
    -webkit-box-shadow: inset 0 0 0 50px #F8F8F8 ;
     -webkit-text-fill-color: #9B9B9B;
+}
+
+.just-validate-error-label {
+	/* position: absolute; */
 }
 
 @tailwind base;

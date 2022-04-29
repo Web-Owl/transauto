@@ -12,7 +12,7 @@
   <Catalog @open-modal="$emit('isOpened')"/> 
   <div class="sectionTitle sectionTitle--mb110 tac">марки спецтехники</div>
   <Brands />
-  <Offer title="ХОТИТЕ УЗНАТЬ УСЛОВИЯ АРЕНДЫ СПЕЦТЕХНИКИ?" text="Оставьте заявку или звоните нам <a href='tel:+79175170350'>+7 (917) 517-03-50</a>" />
+  <Offer title="ХОТИТЕ УЗНАТЬ УСЛОВИЯ АРЕНДЫ СПЕЦТЕХНИКИ?" text="Оставьте заявку или звоните нам <a href='tel:+79175170350'>+7 (917) 517-03-50</a>" @form-send="$emit('formSend')"/>
   <div class="sectionTitle tac">наши преимущества</div>
   <Benefits />
   <Goods @open-modal="$emit('isOpened')"/>
