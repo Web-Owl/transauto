@@ -105,7 +105,7 @@
           <div
             class="yBtn goods__order showPdOrder" @click="$emit('openModal')"
           >
-            Заказать
+            Забронировать
           </div>
         </div>
       </swiper-slide>
