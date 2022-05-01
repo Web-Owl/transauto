@@ -54,8 +54,10 @@ export default {
                     Мы перезвоним Вам за 1 минуту
                 </div>
                 <form @submit.prevent id="requestForm">
-                    <label for="phone"></label>
-			<input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
+                    <div>
+                        <label for="phone"></label>
+                                    <input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
+                    </div>
                     <label class="LABEL_CHECK" data-id="CHECK_CALS3">
                         <input type="checkbox" checked="checked" id="CHECK_CALS3" value="1">
                         <span></span>

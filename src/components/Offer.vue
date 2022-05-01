@@ -45,8 +45,10 @@ export default {
 		<slot></slot>
 		</div>
 		<form action="" @submit.prevent id="offerForm">
-			<label for="phone"></label>
-			<input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
+			<div class="w-full">
+				<label for="phone"></label>
+				<input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
+			</div>
 			<label class="LABEL_CHECK">
 				<input type="checkbox" checked="checked" id="CHECK_ARENDA" value="1">
 				<span></span>

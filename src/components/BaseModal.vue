@@ -27,9 +27,10 @@ methods: {
 		},
 	])
 	.onSuccess((event) => {
-    	console.log('Validation passes and form submitted', event);
+    console.log('Validation passes and form submitted', event);
 		this.send();
 		alert('Форма успешно отправлена!')
+    this.$emit('closeModal')
   })
   }
 }
@@ -40,8 +41,10 @@ methods: {
       <div class="popUps__close" @click="$emit('closeModal')"></div>
       <div class="popUps__title TitleFormCart">Заказать</div>
       <form @submit.prevent id="modalForm">
-      <label for="phone"></label>
-			<input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
+      <div>
+        <label for="phone"></label>
+              <input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
+      </div>
         <label class="LABEL_CHECK" data-id="CHECK1">
           <input type="checkbox" checked="checked" id="CHECK1" value="1" />
           <span></span>
