@@ -7,12 +7,12 @@ export const goods = [
         price_total: '17 600',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Эксплуатационная масса, кг',
                 value: '32700'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name:'Объем ковша, м3',
                 value: '1.6' 
             }
@@ -26,12 +26,12 @@ export const goods = [
         price_total: '12 600',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Шасси',
                 value: 'Камаз 65111'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name:'Колесная формула',
                 value: '6х6' 
             }
@@ -45,12 +45,12 @@ export const goods = [
         price_total: '13 200',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Тип',
                 value: '700'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name:'Максимальная скорость (км/ч)',
                 value: '90' 
             }
@@ -64,12 +64,12 @@ export const goods = [
         price_total: '16 000',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Тип двигателя',
                 value: 'Дизельный'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name:'Модель двигателя',
                 value: 'D 26' 
             }
@@ -83,12 +83,12 @@ export const goods = [
         price_total: '12 600',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Грузоподъемность, тонн',
                 value: '20'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name:'Длина борта, м',
                 value: '13.7' 
             }
@@ -102,12 +102,12 @@ export const goods = [
         price_total: '11 000',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Эксплуатационная масса, кг',
                 value: '3750'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name:'Мощность двигателя, л.с.',
                 value: '81' 
             }
@@ -121,12 +121,12 @@ export const goods = [
         price_total: '10 200',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Номинальная грузоподъемность',
                 value: '869 кг'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name:'Опрокидывающая нагрузка',
                 value: '1737 кг' 
             }
@@ -147,12 +147,12 @@ export const goods = [
         price_total: '15 600',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Эксплуатационная масса, кг',
                 value: '17300'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name:'Объем ковша, м3',
                 value: '0.76' 
             }
@@ -166,12 +166,12 @@ export const goods = [
         price_total: '12 000',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Максимальная глубина копания',
                 value: '4,72 м'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name: 'Высота выгрузки',
                 value: '2,64' 
             }
@@ -185,12 +185,12 @@ export const goods = [
         price_total: '12 000',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Грузоподъемность',
                 value: '20000 кг'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name: 'Объем кузова',
                 value: '20м3' 
             }
@@ -204,12 +204,12 @@ export const goods = [
         price_total: '13 600',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Максимальный грузовой момент, т.м',
                 value: '98'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name: 'Грузоподъёмность максимальная, т/вылет, м',
                 value: '32/3,0' 
             }
@@ -230,12 +230,12 @@ export const goods = [
         price_total: '16 600',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Эксплуатационная масса, кг',
                 value: '20600'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name: 'Объем ковша, м3',
                 value: '0.8' 
             }
@@ -249,12 +249,12 @@ export const goods = [
         price_total: '13 000',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Максимальная глубина копания',
                 value: '4,72 м'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name: 'Высота выгрузки',
                 value: '2,74' 
             }
@@ -275,12 +275,12 @@ export const goods = [
         price_total: '13 600',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Эксплуатационная масса, кг',
                 value: '13498.9'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name: 'Объем ковша, м3',
                 value: '0.6' 
             }
@@ -301,12 +301,12 @@ export const goods = [
         price_total: '10 600',
         characteristics:[
             {
-                img_src: '/img/act_ch1.svg',
+                image: 'act_ch1.svg',
                 name:'Базовое шасси',
                 value: 'КамАЗ-65115'
             },
             {
-                img_src: '/img/act_ch2.svg',
+                image: 'act_ch2.svg',
                 name: 'Мощность',
                 value: '240 л.с' 
             }

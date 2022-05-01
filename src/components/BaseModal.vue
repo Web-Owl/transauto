@@ -56,4 +56,5 @@ methods: {
       </form>
     </div>
   </div>
+  <div modal-backdrop="" class="bg-gray-900 bg-opacity-50 fixed inset-0 z-40"></div>
 </template>
