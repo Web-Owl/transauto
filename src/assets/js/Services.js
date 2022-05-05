@@ -1,7 +1,7 @@
 export const services = [
     {
         image: 'i1q3ru226u2aht9gt3j7gqj414xoegag.jpg',
-        name: "Вывоз строительного мусора с утилизацией",
+        name: "Вывоз строительного мусора",
         price: '100 руб./м³',
     },
     {
@@ -15,7 +15,7 @@ export const services = [
         price: '450 руб./м³',
     },
     {
-        image: 'upxlm5w2bmzreqpsoo3xevexecbsszon.jpg',
+        image: 'snow.jpg',
         name: "Вывоз снега",
         price: '450 руб./м³',
     },

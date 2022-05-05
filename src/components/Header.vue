@@ -25,6 +25,9 @@
                       <a href="/arenda/">Аренда спецтехники</a>
                   </li>
                   <li>
+                      <a href="/removals/">Вывоз мусора</a>
+                  </li>
+                  <li>
                       <a href="/services/">Услуги</a>
                   </li>
                   <li>
@@ -51,6 +54,9 @@
                   <router-link to="/arenda" class="hidden md:block">Аренда спецтехники</router-link>
               </li>
               <li>
+                  <router-link to="/removals" class="hidden md:block">Вывоз мусора</router-link>
+              </li>
+              <li>
                   <router-link to="/services" class="hidden md:block">Услуги</router-link>
               </li>
               <li>
@@ -64,11 +70,15 @@
               <div class="phones">
                   <a href="tel:79162716060">+7 (916) 271-60-60</a>
               </div>
+              <div class="">
+                      <p class="my-4 text-center">круглосуточно - без выходных</p>
+                  </div>
               <div class="socials df aic">
                   <!-- <a href="https://wa.me/+79175170350" target="_blank" rel="nofollow"><img src="../assets/img/whatsapp.svg" alt=""></a>
                   <a href="tg://resolve?domain=OOOTransavto" target="_blank" rel="nofollow"><img src="../assets/img/telegram.svg" alt=""></a> -->
               </div>
           </div>
+                  
           <div class="callback yBtn showCallBack" @click="$emit('openModal')">связаться с нами 24/7</div>
       </div>
   </header>

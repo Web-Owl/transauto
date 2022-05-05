@@ -32,14 +32,14 @@
     <div class="rentFilter">
         <div class="contentData df fww aic">
             <div class="rentFilter__label">выберите спецтехнику:</div>
-            <a  class="rentFilter__link showInd">Не нашли нужную спецтехнику?</a>
+            <!-- <a  class="rentFilter__link showInd">Не нашли нужную спецтехнику?</a> -->
             <div class="rentFilter__selects df fww">
             <div class="select">
                 <v-select v-model="selected" placeholder ='Выберите вид спецтехники' label="name" :options="rentCatalog__items" :reduce="rentCatalog__items => rentCatalog__items.name" class="FilterCategory" 
                 ></v-select>
             </div>
-                <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-if="selected =='Вид спецтехники'">
-                    <div class="rentCatalog__item" v-for="item in rentCatalog__items">
+                <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-if="selected === 'Вид спецтехники' || selected === null">
+                    <div class="rentCatalog__item bg-white" v-for="item in rentCatalog__items">
                         <div class="rentCatalog__img" >
                                 <img :src="getImageUrl(item.image)" alt="">
                         </div>
@@ -53,7 +53,7 @@
                 <div class="goods" v-else>
                     <div class="goods__list df fww">
                         <template v-for="item in goods" :key="item.name">
-                            <div class="goods__item" v-if="item.category == selected">
+                            <div class="goods__item bg-white" v-if="item.category == selected">
                                 <div class="goods__itemName">
                                     {{ item.name }}
                                 </div>

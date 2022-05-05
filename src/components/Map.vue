@@ -1,7 +1,7 @@
 <template>
     <div class="map">
 			<!-- <div id="map_canvas"></div> -->
-			<div id=""><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2ef43477b4db8d63280ecf159092ce261d8981d56847f8b6d6c2ed18a7ddaa2&amp;source=constructor" width="100%" height="955" frameborder="0"></iframe></div>
+			<div class=""><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2ef43477b4db8d63280ecf159092ce261d8981d56847f8b6d6c2ed18a7ddaa2&amp;source=constructor" frameborder="0"></iframe></div>
 			<div class="map__data">
 				<div class="map__name">
 					Юго-запад Сервис
@@ -27,3 +27,16 @@
 			</div>
 		</div>
 </template>
+
+<style scoped>
+iframe {
+	width: 100%;
+	height: 955px;
+}
+@media screen and (max-width: 1024px) {
+	iframe {
+	width: 100%;
+	height: 288px;
+}
+}
+</style>

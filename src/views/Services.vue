@@ -5,11 +5,10 @@
     import Offer from '../components/Offer.vue'
 </script>
 <template>
-    <Request title="ЗАЯВКА НА ОКАЗАНИЕ УСЛУГ" @form-send="$emit('formSend')"/>
+    <div class="mb-16"></div>
     <div class="sectionTitle tac">наши услуги</div>
     <Services @open-modal="$emit('isOpened')"/>
     <Description>
-        <img src="../assets/img/about.jpg" alt="" class="text__imgR">
         <h1 class="pageTitle">
             <p align="center">
                 Услуги спецтехники с экипажем в Москве и Московской области

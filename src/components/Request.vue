@@ -16,6 +16,9 @@ export default {
       ym(88437916,'reachGoal','send_form')
 		  return axios.post(`/ajax/send.php`, formData)
 		},
+        agreeded: function() {
+            return this.checked = !this.checked
+        }
   },
   mounted() {
 	  const validate = new JustValidate('#requestForm');
@@ -30,6 +33,11 @@ export default {
 		this.send();
 		alert('Форма успешно отправлена!')
   })
+  },
+  data() {
+      return {
+          checked: true
+      }
   }
 }
 </script>
@@ -59,15 +67,12 @@ export default {
                                     <input class="form-check-input" type="text" placeholder="+7 (___) ___ - __- __" name="PHONE" @click="masked" id="phone">
                     </div>
                     <label class="LABEL_CHECK" data-id="CHECK_CALS3">
-                        <input type="checkbox" checked="checked" id="CHECK_CALS3" value="1">
+                        <input type="checkbox" :checked='checked' id="CHECK_CALS3" value="1" @click="agreeded">
                         <span></span>
-                        Согласен с &nbsp;<a href="/confidance/" target="_blank">политикой конфиденциальности</a>
+                        Согласен с &nbsp;политикой конфиденциальности
                     </label>
                     <div class="iconInk iconInk-td">
-                        <input type="hidden" name="MOZG" value="1">
-                        <input type="hidden" name="links" value="/">
-                        <input type="hidden" name="subject" value="Аренда спецтехники">
-                        <input class="yBtn" type="submit" value="Заказать" id="submit-btn">
+                        <input class="yBtn" type="submit" value="Заказать" :disabled="!checked"  id="submit-btn">
                     </div>
                 </form>
             </div>

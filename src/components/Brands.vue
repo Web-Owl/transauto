@@ -42,7 +42,6 @@
         navigation
         @swiper="onSwiper"
         @slideChange="onSlideChange"
-        :navigation="true"
         :breakpoints="{
             '640': {
                 slidesPerView: 2,

@@ -4,6 +4,8 @@ const Arenda = () => import ("../views/Arenda.vue");
 const Services = () => import ("../views/Services.vue");
 const About = () => import ("../views/About.vue");
 const Contacts = () => import ("../views/Contacts.vue");
+const Removals = () => import ("../views/Removals.vue")
+
 
 const routes = [
   {
@@ -30,6 +32,11 @@ const routes = [
     path: "/contacts",
     name: "Контакты",
     component: Contacts,
+  },
+  {
+    path: "/removals",
+    name: "Вывоз строительного мусора",
+    component: Removals,
   },
 ];
 

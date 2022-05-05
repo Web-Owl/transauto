@@ -209,6 +209,8 @@ header .callback {
 	margin-left: auto;
 	height: 124px;
 	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
 }
 .head_contacts .socials {
 	margin-left: 40px;
@@ -589,9 +591,7 @@ header .callback {
 }
 .wf__text {
 	text-align: center;
-	text-decoration: underline;
 	margin-bottom: 30px;
-	color: #0D3896;
 }
 .tac {
 	text-align: center;
@@ -1707,7 +1707,7 @@ label:hover .product__dopImg img {
 }
 .rentFilter {
 	padding-top: 33px;
-	background-color: #F6F6F6;
+	background-color: #f3f4f6;
 }
 .rentFilter .contentData {
 	justify-content: space-between;

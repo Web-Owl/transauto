@@ -2,7 +2,7 @@
 export const rentCatalog__items = [
     {
         name: 'Самосвал',
-        image: 'd31u8cy79jjpb0j8gw7zaz7arodg1pt7.jpg',
+        image: '1619769500175-removebg.png',
     },
     {
         name: 'Экскаваторы погрузчики',
