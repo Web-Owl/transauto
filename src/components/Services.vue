@@ -14,7 +14,7 @@
 <template>
     <div class="services contentData">
         <div class="services__list df fww">
-            <div class="services__item" v-for="item in services" >
+            <div class="services__item" v-for="item in services" @click="$emit('openModal')">
                 <div class="services__img"><img :src="getImageUrl(item.image)" alt=""></div>
                 <div class="services__data">
                     <div class="services__name">
