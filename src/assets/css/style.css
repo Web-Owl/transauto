@@ -810,7 +810,7 @@ header .callback {
 .formOrder form input[type="email"] ,
 .formOrder form input[type="text"] {
 	box-sizing: border-box;
-	width: calc( 50% - 15px );
+	width: 100%;
 	margin-bottom: 30px;
 	height: 87px;
 	padding-left: 33px;
@@ -823,7 +823,7 @@ header .callback {
 	transition-duration: 0.5s;
 }
 .formOrder form {
-	width: 910px;
+	width: 650px;
 	max-width: 100%;
 	display: flex;
 	justify-content: space-between;

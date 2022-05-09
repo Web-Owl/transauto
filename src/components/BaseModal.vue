@@ -68,9 +68,7 @@ methods: {
         <label class="LABEL_CHECK" data-id="CHECK1">
           <input type="checkbox" checked="checked" id="CHECK1" value="1" />
           <span></span>
-          Согласен с &nbsp;<a href="/confidance/" target="_blank"
-            >политикой конфиденциальности</a
-          >
+          Согласен с политикой конфиденциальности
         </label>
         <input class="yBtn" type="submit" value="отправить" id="submit-btn"/>
       </form>

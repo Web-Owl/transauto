@@ -6,7 +6,12 @@
     import 'swiper/css/navigation';
     SwiperCore.use([Pagination, Navigation]);
     export default {
-
+      props:{
+        category: {
+          type: String,
+          required: true
+        },
+      },
         components: {
             Swiper,
             SwiperSlide,
@@ -36,6 +41,23 @@
                 return new URL(`../assets/img/${name}`, import.meta.url).href
             },
         },
+        computed: {
+          filteredGoods: function(){
+            var goods = []
+            if (this.category === 'Вид спецтехники' || this.category == null ) {
+              goods = this.goods
+            }
+            else {
+              goods = this.goods.filter(good => {
+                if(good.category  == this.category){
+                  return true
+                }
+                return  false
+              })
+            }
+            return goods
+          }
+        },
         data() {
             return {
                 goods: goods
@@ -50,11 +72,10 @@
       <div class="goods__sl"></div>
       <div class="goods__sr" id="swiper-forward"></div>
     </div>
-
     <swiper
         @swiper="onSwiper"
         @slideChange="onSlideChange"
-        :loop = "true"
+        :loop = "false"
         :navigation="{
           nextEl: '.goods__sr',
           prevEl: '.goods__sl'
@@ -74,8 +95,9 @@
             },
         }"
         class="goods__slider">
-      <swiper-slide
-        class="goods__item" v-for="item in goods"
+        {}
+      <swiper-slide 
+        class="goods__item" v-for="item in filteredGoods"
       >
         <div class="goods__itemHit">Хит</div>
         <a
@@ -106,9 +128,9 @@
             {{item.price_total}} ₽/смена
           </div>
           <div
-            class="yBtn goods__order showPdOrder" @click="$emit('openModal')"
+            class="yBtn goods__order showPdOrder" @click="$emit('openModal', item)"
           >
-            Забронировать
+            Забронировать 
           </div>
         </div>
       </swiper-slide>

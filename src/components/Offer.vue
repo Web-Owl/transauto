@@ -52,7 +52,7 @@ export default {
 			<label class="LABEL_CHECK">
 				<input type="checkbox" checked="checked" id="CHECK_ARENDA" value="1">
 				<span></span>
-				Согласен с &nbsp;<a href="/confidance/" target="_blank">политикой конфиденциальности</a>
+				Согласен с&nbsp;политикой конфиденциальности
 			</label>
 			<div class="iconInk iconInk-tr">			
 				<input class="yBtn" type="submit" value="Заказать" id="submit-btn">

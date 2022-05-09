@@ -31,8 +31,8 @@
         <div class="contentData df fww aic">
             <div class="rentFilter__label">выберите спецтехнику:</div>
             <div class="rentFilter__selects df fww">
-            <div class="select">
-                <v-select v-model="selected" placeholder ='Выберите вид спецтехники' label="name" :options="rentCatalog__items" :reduce="rentCatalog__items => rentCatalog__items.name" class="FilterCategory" 
+            <div class="select" >
+                <v-select v-model="selected" placeholder ='Выберите вид спецтехники' label="name" :options="rentCatalog__items" :reduce="rentCatalog__items => rentCatalog__items.name" class="FilterCategory" :on-change="$emit('selectCat', selected)"
                 ></v-select>
             </div>
                 <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-if="selected === 'Вид спецтехники' || selected === null">

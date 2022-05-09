@@ -16,7 +16,9 @@ components:{BaseModal},
   data() {
     return {
       showModal: false,
-      select: ''
+      select: '',
+      category: ''
+      
 
     }
   },
@@ -24,7 +26,9 @@ components:{BaseModal},
     isOpened(event) {
       this.showModal = true
       this.select = event
-      console.log(this.select)
+    },
+    isSelected(event) {
+      this.category = event
     }
   }
   

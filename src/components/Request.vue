@@ -69,7 +69,7 @@ export default {
                     <label class="LABEL_CHECK" data-id="CHECK_CALS3">
                         <input type="checkbox" :checked='checked' id="CHECK_CALS3" value="1" @click="agreeded">
                         <span></span>
-                        Согласен с &nbsp;политикой конфиденциальности
+                        Согласен с&nbsp;политикой конфиденциальности
                     </label>
                     <div class="iconInk iconInk-td">
                         <input class="yBtn" type="submit" value="Заказать" :disabled="!checked"  id="submit-btn">

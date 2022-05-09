@@ -180,7 +180,7 @@ export const goods = [
     {
         name: 'Самосвал КАМАЗ-6520 20м3',
         category: 'Самосвал',
-        image: 'm9n989awofbnsev30u2rzmuhlngojsm5.jpg',
+        image: '1619769500175-removebg.png',
         price_per_hour: '1 500',
         price_total: '12 000',
         characteristics:[
