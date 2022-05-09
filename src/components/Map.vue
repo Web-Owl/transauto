@@ -1,7 +1,7 @@
 <template>
     <div class="map">
 			<!-- <div id="map_canvas"></div> -->
-			<div class=""><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2ef43477b4db8d63280ecf159092ce261d8981d56847f8b6d6c2ed18a7ddaa2&amp;source=constructor" frameborder="0"></iframe></div>
+			<div class=""><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2ef43477b4db8d63280ecf159092ce261d8981d56847f8b6d6c2ed18a7ddaa2&amp;source=constructor"  frameborder="0"></iframe></div>
 			<div class="map__data">
 				<div class="map__name">
 					Юго-запад Сервис
