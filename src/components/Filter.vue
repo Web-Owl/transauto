@@ -9,21 +9,19 @@
             Catalog,
             vSelect
         },
-        computed: {
-            
-        },
         methods: {
         getImageUrl(name) {
                 return new URL(`../assets/img/iblock/${name}`, import.meta.url).href
-            }
+            },
+        getCharImageurl(name){
+                return new URL(`../assets/img/${name}`, import.meta.url).href
+            }             
         },
         data() {
             return {
                 rentCatalog__items: rentCatalog__items,
                 goods: goods,
-                // selected: ''
-                selected: 'Вид спецтехники'
-                
+                selected: 'Вид спецтехники',
             }
         }
     }
@@ -32,14 +30,13 @@
     <div class="rentFilter">
         <div class="contentData df fww aic">
             <div class="rentFilter__label">выберите спецтехнику:</div>
-            <!-- <a  class="rentFilter__link showInd">Не нашли нужную спецтехнику?</a> -->
             <div class="rentFilter__selects df fww">
             <div class="select">
                 <v-select v-model="selected" placeholder ='Выберите вид спецтехники' label="name" :options="rentCatalog__items" :reduce="rentCatalog__items => rentCatalog__items.name" class="FilterCategory" 
                 ></v-select>
             </div>
                 <div class="rentCatalog rentCatalog--mb155 contentData df fww" v-if="selected === 'Вид спецтехники' || selected === null">
-                    <div class="rentCatalog__item bg-white" v-for="item in rentCatalog__items">
+                    <div class="rentCatalog__item bg-white" v-for="item in rentCatalog__items"  @click="$emit('openModal')">
                         <div class="rentCatalog__img" >
                                 <img :src="getImageUrl(item.image)" alt="">
                         </div>
@@ -52,8 +49,10 @@
                 
                 <div class="goods" v-else>
                     <div class="goods__list df fww">
+                        
                         <template v-for="item in goods" :key="item.name">
-                            <div class="goods__item bg-white" v-if="item.category == selected">
+                            <div class="goods__item bg-white" v-if="item.category == selected" @click="$emit('openModal', item)">
+                                
                                 <div class="goods__itemName">
                                     {{ item.name }}
                                 </div>
@@ -63,7 +62,7 @@
                                 <div class="goods__chars" v-if="item.characteristics">
                                     <span>Характеристики</span>
                                     <div class="goods__char" v-for="item in item.characteristics">
-                                        <img :src="getImageUrl(item.image)" alt="" />
+                                        <img :src="getCharImageurl(item.image)" alt="" />
                                         {{item.name}} <span></span>
                                         <b>{{item.value}}</b>
                                     </div>
@@ -74,7 +73,7 @@
                                         {{item.price_total}} ₽/смена
                                     </div>
                                     <div
-                                        class="yBtn goods__order showPdOrder" @click="$emit('openModal')"
+                                        class="yBtn goods__order showPdOrder" @click="$emit('openModal', item)"
                                     >
                                         Заказать
                                     </div>

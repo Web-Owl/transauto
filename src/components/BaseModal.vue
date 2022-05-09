@@ -3,6 +3,12 @@ import Inputmask from "inputmask";
 import JustValidate from 'just-validate';
 import axios from 'axios'
 export default {
+  props:{
+    select: {
+      type: String,
+      required: true
+    },
+  },
 methods: {
 	  masked() {
 		   var selector = this.$el.querySelector('input[name="PHONE"]');
@@ -16,6 +22,9 @@ methods: {
       ym(88437916,'reachGoal','send_form')
 		  return axios.post(`/ajax/send.php`, formData)
 		},
+    getImageUrl(name) {
+      return new URL(`../assets/img/iblock/${name}`, import.meta.url).href
+    },
   },
    
   mounted() {
@@ -32,6 +41,11 @@ methods: {
 		alert('Форма успешно отправлена!')
     this.$emit('closeModal')
   })
+  },
+  data () {
+    return{
+
+    }
   }
 }
 </script>
@@ -39,7 +53,13 @@ methods: {
   <div class="popUps__block">
     <div class="popUps__blockInner">
       <div class="popUps__close" @click="$emit('closeModal')"></div>
-      <div class="popUps__title TitleFormCart">Заказать</div>
+      <div v-if='select'>
+        <div class="popUps__title TitleFormCart" >Заказать {{select.name}}</div>
+        <div class="goods__itemImg" >
+          <img :src = getImageUrl(select.image) />
+        </div>
+      </div>
+        <div class="popUps__title TitleFormCart" v-else>Заказать</div>
       <form @submit.prevent id="modalForm">
       <div>
         <label for="phone"></label>

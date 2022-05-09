@@ -8,31 +8,37 @@
 
 <script>
 export default {
+
 components:{BaseModal},
   setup() {
     
   },
   data() {
     return {
-      showModal: false
+      showModal: false,
+      select: ''
+
     }
   },
   methods: {
-    isOpened() {
+    isOpened(event) {
       this.showModal = true
+      this.select = event
+      console.log(this.select)
     }
   }
+  
 }
 </script>
 
 
 <template>
   <div class="wrapper"> 
-    <Header @open-modal="isOpened"/>
-    <router-view @is-opened = "isOpened"></router-view>
+    <Header @open-modal="isOpened" />
+    <router-view  @isOpened = "isOpened"></router-view>
     <Map @open-modal="isOpened"/>
     <Footer @open-modal="isOpened"/>
-    <BaseModal v-if="showModal" @close-modal="showModal = false"/>
+    <BaseModal v-if="showModal" @close-modal="showModal = false" :select='select'/>
   </div> 
 </template>
 
