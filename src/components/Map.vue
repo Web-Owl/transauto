@@ -1,14 +1,46 @@
+<script>
+    export default {
+        data() {
+            return {
+				a: 1
+            }
+        },
+		methods: {
+			
+		},
+		created: function () {
+			ymaps.ready(init);
+			function init() {
+					var myMap = new ymaps.Map("map", {
+					center: [55.565346, 37.442599],
+					zoom: 15,
+					controls: []
+				});
+
+			myMap.geoObjects
+				.add(new ymaps.Placemark([55.565346, 37.442599], {
+					balloonContent: 'Россия, Москва, поселение Сосенское, деревня Сосенки, 10',
+					iconCaption: 'Юго-Запад сервис'
+				}, {
+				preset: 'islands#yellowAutoIcon'
+			}
+		));
+		}
+    }
+}
+</script>
+
 <template>
     <div class="map">
 			<!-- <div id="map_canvas"></div> -->
-			<div class=""><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2ef43477b4db8d63280ecf159092ce261d8981d56847f8b6d6c2ed18a7ddaa2&amp;source=constructor"  frameborder="0"></iframe></div>
-			<div class="map__data">
+			<div id="map" class="w-full lg:w-3/4 h-96"></div>
+			<div class="map__data h-96 p-6">
 				<div class="map__name">
 					Юго-запад Сервис
 				</div>
 				<div class="map__address">
 					<b>Наш адрес:</b>
-					<a href="/contacts/">Малая летовская 10, Д. Сосенки, Москва</a>				</div>
+					Юго-Западный округ			</div>
 				<div class="map__phones">
 					<b>Телефоны:</b>
 					<a href="tel:79162716060">+7 (916) 271-60-60</a>				</div>

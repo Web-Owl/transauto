@@ -21,12 +21,12 @@ export const services = [
     },
     {
         image: 'n8roc3xu4dfanavfc55k3cpyw34605lx.jpg',
-        name: "Утилизация снега",
+        name: "Уборка территории",
         price: '8 000 руб.',
     },
     {
         image: 'u466onerhha9oemgmpjii2yi5mv02r5a.jpg',
-        name: "Вывоз грунта с утилизацией",
+        name: "Вывоз грунта",
         price: '10 000 руб.',
     },
     {
@@ -36,7 +36,7 @@ export const services = [
     },
     {
         image: 'bez6p3ekq3xdq12yas3to00y7aasfuqx.jpg',
-        name: "Разработка котлованов и траншей",
+        name: "Разработка котлованов и траншей строительно-монтажные работы",
         price: '100 руб./м³',
     },
 ]

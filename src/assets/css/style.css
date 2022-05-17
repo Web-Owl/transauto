@@ -891,7 +891,7 @@ header .callback {
 	width: 1800px;
 	max-width: 100%;
 	margin: 0 auto;
-	margin-bottom: 130px;
+	margin-bottom: 75px;
 }
 .goods-mb100 {
 	margin-bottom: 100px;
@@ -1172,10 +1172,10 @@ header .callback {
 	position: absolute;
 	right: 50%;
 	margin-right: -885px;
-	padding: 80px 70px;
-	width: 576px;
+	/* padding: 40px 35px; */
+	width: 510px;
 	box-sizing: border-box;
-	top: 100px;
+	top: 0px;
 	background-color: #fff;
 	font-size: 16px;
 }
@@ -1185,13 +1185,13 @@ header .callback {
 	display: block;
 }
 .map__name {
-	font-size: 35px;
+	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: 900;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .map__address {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .map__phones br + a {
 	margin-top: 5px;
@@ -1219,10 +1219,10 @@ header .callback {
 	display: inline-block;
 }
 .map__phones {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .map__email {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 
 .map__email a:hover {
@@ -1258,7 +1258,7 @@ header .callback {
 	/*background: transparent url(/src/assets/img/download.svg) no-repeat scroll 0 50%;*/
 }
 .map__download {
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 }
 .map__actions a:nth-child(2):hover:after {
 	left: 200px;

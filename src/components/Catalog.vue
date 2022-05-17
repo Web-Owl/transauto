@@ -16,7 +16,7 @@
 
 <template>
     <div class="rentCatalog rentCatalog--mb155 contentData df fww">
-        <div class="rentCatalog__item cursor-pointer" v-for="item in rentCatalog__items" @click="$emit('openModal', item)">
+        <div class="rentCatalog__item cursor-pointer" v-for="item in rentCatalog__items" @click="$emit('openModal', item)" :key="item">
             <div class="rentCatalog__img">
                 <img :src="getImageUrl(item.image)" alt="">
             </div>

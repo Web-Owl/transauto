@@ -1,35 +1,33 @@
+<script>
+    import rentCatalog__items from '../assets/js/Catalog.js';
+    import services from '../assets/js/Services.js';
+    export default {
+        data() {
+            return {
+                rentCatalog__items: rentCatalog__items,
+                services: services
+            }
+        }
+    }
+</script>
 <template>
     <footer class="footer">
         <div class="contentData">
             <a href="/" class="logo"><img src="../assets/img/logo.png" alt=""></a>
             <div class="footer__data df fww">
-                <div class="footer__dataItem">
+                <div class="footer__dataItem w-1/4">
                     <a href="/arenda/">Аренда спецтехники</a>
                     <ul>
-                        <li>Самосвалы</li>
-                        <li>Экскаваторы погрузчики</li>
-                        <li>Колесные экскаваторы</li>
-                        <li>Гусеничные экскаваторы</li>
-                        <li>Автокраны</li>
-                        <li>Манипуляторы</li>
-                        <li>Коммунальные тракторы</li>
-                        <li>Мини-погрузчики</li>
+                        <li v-for="item in rentCatalog__items" :key="item.name">{{item.name}}</li>
                     </ul>
                 </div>
-                <div class="footer__dataItem">
+                <div class="footer__dataItem w-1/4">
                     <a href="/services/">Услуги</a>
                     <ul>
-                        <li>Вывоз строительного мусора с утилизацией</li>
-                        <li>Вывоз мусора контейнерами</li>
-                        <li>Вывоз твердых отходов</li>
-                        <li>Вывоз снега</li>
-                        <li>Утилизация снега</li>
-                        <li>Вывоз грунта с утилизацией</li>
-                        <li>Разработка котлованов и траншей</li>
-                        <li>Демонтаж зданий</li>
+                        <li v-for="item in services" :key="item.name">{{item.name}}</li>
                     </ul>
                 </div>
-                <div class="footer__dataItem">
+                <div class="footer__dataItem w-1/4">
                     <a href="/about/">О компании</a>
                     <ul>
                         <li>Марки спецтехники</li>
@@ -37,7 +35,7 @@
                         <li>Контакты</li>
                     </ul>
                 </div>
-                <div class="footer__dataItem">
+                <div class="footer__dataItem w-1/4">
                     <a href="/contacts/">Контакты</a>
                     <div class="phones">
                         <a href="tel:79162716060">+7 (916) 271-60-60</a>

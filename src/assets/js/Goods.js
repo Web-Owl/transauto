@@ -3,7 +3,7 @@ export const goods = [
         name: 'Гусеничный экскаватор Hyundai R330LC-9S',
         category: 'Экскаватор',
         image: 'b38934qhcs6eqz33j4z97xyr2b4zf1x2.jpg',
-        price_per_hour: '2 200',
+        price_per_hour: '2 500',
         price_total: '17 600',
         characteristics:[
             {
@@ -23,7 +23,7 @@ export const goods = [
         image: '99dsfhikurc7kz7u2y2l1v3o6b134sk2.jpg',
         category: 'Автокраны',
         price_per_hour: '1 575',
-        price_total: '12 600',
+        price_total: '15 200',
         characteristics:[
             {
                 image: 'act_ch1.svg',
@@ -42,7 +42,7 @@ export const goods = [
         image: '4o11ewrm44likbxnalcd36pti1d8myd9.jpg',
         category: 'Манипуляторы',
         price_per_hour: '1 650',
-        price_total: '13 200',
+        price_total: '14 700',
         characteristics:[
             {
                 image: 'act_ch1.svg',
@@ -61,7 +61,7 @@ export const goods = [
         image: 'zooybktx4ngp5363peg8xnbw77p4ledl.jpg',
         category: 'Тралы',
         price_per_hour: '2 000',
-        price_total: '16 000',
+        price_total: '17 500',
         characteristics:[
             {
                 image: 'act_ch1.svg',
@@ -180,7 +180,7 @@ export const goods = [
     {
         name: 'Самосвал КАМАЗ-6520 20м3',
         category: 'Самосвал',
-        image: '1619769500175-removebg.png',
+        image: 'm9n989awofbnsev30u2rzmuhlngojsm5.jpg',
         price_per_hour: '1 500',
         price_total: '12 000',
         characteristics:[
