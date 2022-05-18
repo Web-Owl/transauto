@@ -7,9 +7,10 @@
 </script>
 
 <script>
+import ClickOutside from 'vue-click-outside'
 export default {
 
-components:{BaseModal},
+components:{Header, Footer, Map, BaseModal},
   setup() {
     
   },
@@ -18,8 +19,6 @@ components:{BaseModal},
       showModal: false,
       select: '',
       category: ''
-      
-
     }
   },
   methods: {
@@ -30,8 +29,7 @@ components:{BaseModal},
     isSelected(event) {
       this.category = event
     }
-  }
-  
+  },
 }
 </script>
 

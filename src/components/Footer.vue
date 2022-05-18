@@ -24,7 +24,7 @@
                 <div class="footer__dataItem w-1/4">
                     <a href="/services/">Услуги</a>
                     <ul>
-                        <li v-for="item in services" :key="item.name">{{item.name}}</li>
+                        <li v-for="item in services" :key="item.name"  v-html="item.name"></li>
                     </ul>
                 </div>
                 <div class="footer__dataItem w-1/4">

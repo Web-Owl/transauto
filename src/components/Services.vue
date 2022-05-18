@@ -14,11 +14,11 @@
 <template>
     <div class="services contentData">
         <div class="services__list df fww">
-            <div class="services__item" v-for="item in services" @click="$emit('openModal')">
-                <div class="services__img"><img :src="getImageUrl(item.image)" alt=""></div>
+            <div class="services__item cursor-pointer" v-for="item in services" @click="$emit('openModal')" :key="item">
+                <div class="services__img "><img :src="getImageUrl(item.image)" alt=""></div>
                 <div class="services__data">
                     <div class="services__name">
-                        <a>{{item.name}}</a>
+                        <a v-html="item.name"></a>
                     </div>
                     <div class="services__price">от
                         {{item.price}}</div>
