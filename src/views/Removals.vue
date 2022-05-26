@@ -2,6 +2,7 @@
 import RemovalsList from '../components/RemovalsList.vue'
 
 export default {
+    emits: ['isOpened'],
     components: { RemovalsList }
 }
 </script>

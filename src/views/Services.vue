@@ -4,6 +4,11 @@
     import Description from '../components/Description.vue'
     import Offer from '../components/Offer.vue'
 </script>
+<script>
+    export default {
+        emits:['isOpened'],
+    }
+</script>
 <template>
     <div class="mb-16"></div>
     <div class="sectionTitle tac">наши услуги</div>

@@ -4,11 +4,10 @@ import JustValidate from 'just-validate';
 import axios from 'axios'
 import vClickOutside from 'click-outside-vue3'
 export default {
-  
+  emits:['closeModal'],
   props:{
     select: {
-      type: String,
-      required: true
+      type: Object
     },
   },
   directives: {

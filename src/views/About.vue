@@ -3,6 +3,11 @@
   import Offer from '../components/Offer.vue'
   import Catalog from '../components/Catalog.vue'
 </script>
+<script>
+    export default {
+        emits:['isOpened'],
+    }
+</script>
 <template>
   <Description>
     <img src="../assets/img/about.jpg" alt="" class="text__imgR">
@@ -28,5 +33,5 @@
   </Description>
   <Offer title="ХОТИТЕ УЗНАТЬ УСЛОВИЯ АРЕНДЫ СПЕЦТЕХНИКИ?" text="Оставьте заявку или звоните нам <a href='tel:79162716060'>+7 (916) 271-60-60</a>"/>
   <div class="sectionTitle sectionTitle--mb90 tac"><h1>Аренда спецтехники</h1></div>
-  <Catalog />
+  <Catalog @open-modal="$emit('isOpened', $event)"/>
 </template>

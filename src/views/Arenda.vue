@@ -5,6 +5,7 @@
 </script>
 <script>
 export default {
+  emits: ['isOpened'],
   components: {
     Filter
   },

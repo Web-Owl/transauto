@@ -1,6 +1,7 @@
 <script>
     import services from '../assets/js/Services.js';
     export default {
+    emits:['openModal'],
     methods: {
         getImageUrl(name) {
                 return new URL(`../assets/img/iblock/${name}`, import.meta.url).href

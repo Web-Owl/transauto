@@ -8,8 +8,7 @@
     export default {
       props:{
         category: {
-          type: String,
-          required: true
+          type: String
         },
       },
         components: {

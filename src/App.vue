@@ -9,7 +9,6 @@
 <script>
 import ClickOutside from 'vue-click-outside'
 export default {
-
 components:{Header, Footer, Map, BaseModal},
   setup() {
     

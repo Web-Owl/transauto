@@ -1,5 +1,6 @@
 <script>
-  export default {   
+  export default {  
+  emits:['openModal'], 
   data: function() {
     return {
       isActive : false,
